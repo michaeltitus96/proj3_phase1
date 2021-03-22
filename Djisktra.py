@@ -6,10 +6,10 @@ import cv2
 import copy
 import imutils
 
-start_x = int(input("Enter starting x-coordinate: "))       #user inputs the starting and finishing coordinates
-start_y = int(input("Enter starting y-coordinate: "))
-goal_x = int(input("Enter finishing x-coordinate: "))
-goal_y = int(input("Enter finishing y-coordinate: "))
+start_x = int(input("Enter starting x-coordinate (between 6 and 394): "))       #user inputs the starting and finishing coordinates
+start_y = int(input("Enter starting y-coordinate (between 6 and 294): "))
+goal_x = int(input("Enter finishing x-coordinate (between 6 and 394): "))
+goal_y = int(input("Enter finishing y-coordinate (between 6 and 294): "))
 print()
 
 image = np.ones((401,301,1),np.uint8)*255       #creates blank image
